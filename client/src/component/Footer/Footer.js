@@ -20,14 +20,14 @@ const Footer = () => (
           .
         </p>
         <p>
-          Made with <i className="fas fa-heartbeat" /> by{" "}
+          Made with by{" "}
           <a
             className="profile"
             href="https://arlbibek.github.io"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Bibek Aryal
+            Group 06
           </a>
           .
         </p>
