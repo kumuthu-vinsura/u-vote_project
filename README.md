@@ -50,7 +50,7 @@ Admin will create a voting instance by launching/deploying the system in a block
 
    ```shell
    git clone https://github.com/itsnue/u-vote_project.git
-   cd dVoting
+   cd u-vote_project
    ```
 
 1. Run local Ethereum blockchain
