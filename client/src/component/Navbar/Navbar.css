@@ -1,17 +1,17 @@
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Space Grotesk', Geneva, Tahoma, sans-serif;
 }
 li {
   list-style-type: none;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 nav {
   display: flex;
-  height: 11vh;
-  background: tomato;
+  height: 13vh;
+  background: #FAFAFA;
   justify-content: space-around;
   position: sticky;
   top: 0;
@@ -21,6 +21,10 @@ nav .header {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
+}
+nav .header img {
+  width: 68.81px;
+  height: 40px;
 }
 nav .header:hover {
   cursor: pointer;
@@ -39,7 +43,7 @@ nav .navbar-links a {
 }
 nav .navbar-links a:hover {
   cursor: pointer;
-  color: black;
+  color: #1B2D4B;
 }
 nav .burger-menu {
   font-size: 24px;
