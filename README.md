@@ -63,7 +63,8 @@ Admin will create a voting instance by launching/deploying the system in a block
 
 1. Configure metamask on the browser with following details
 
-   New RPC URL: `http://localhost:8545`  
+   New RPC URL [CLI] : `http://localhost:8545`  
+   New RPC URL [GUI] : `http://localhost:7545`
    Chain ID: `1337`
 
 1. Import accounts using private keys from ganache-cli to the metamask extension on the browser
