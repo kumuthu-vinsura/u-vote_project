@@ -11,7 +11,7 @@ const Footer = () => (
           View this project on{" "}
           <a
             className="profile"
-            href="https://github.com/arlbibek/dVoting"
+            href="https://github.com/itsnue/u-vote_project.git"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -23,7 +23,7 @@ const Footer = () => (
           Made with by{" "}
           <a
             className="profile"
-            href="https://arlbibek.github.io"
+            href="https://kumuthu-vinsura.github.io/uxvote"
             target="_blank"
             rel="noopener noreferrer"
           >
