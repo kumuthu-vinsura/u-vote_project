@@ -1,0 +1,22 @@
+.box {
+    background-color: #FAFAFA;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    text-align: center;
+}
+.container img {
+    display: block;
+    width: 516.075px;
+    height: 300px;
+}
+.container h4 {
+    font-size: 1.2em;
+    letter-spacing: 0.9em;
+    text-transform: uppercase;
+    margin-top: 15px;
+    
+}

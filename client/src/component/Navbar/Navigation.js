@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from './logo.png';
 
 import "./Navbar.css";
 
@@ -8,7 +9,7 @@ export default function Navbar() {
   return (
     <nav>
       <NavLink to="/" className="header">
-        <i className="fab fa-hive"></i> Home
+        <img src={logo} alt="uvote logo"/>
       </NavLink>
       <ul
         className="navbar-links"

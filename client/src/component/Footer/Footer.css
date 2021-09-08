@@ -6,8 +6,7 @@
   overflow: auto;
 }
 .footer {
-  background-color: beige;
-  border-top: 1px solid #e7e7e7;
+  background-color: #FAFAFA;
   text-align: center;
   position: fixed;
   left: 0;
@@ -23,7 +22,7 @@ a.profile {
   text-decoration: underline;
 }
 a.profile:hover {
-  color: tomato;
+  color: #1B2D4B;
   text-decoration: underline;
 }
 .footer-container {
