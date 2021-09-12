@@ -105,7 +105,7 @@ export default class Registration extends Component {
             <table>
               <tr>
                 <th>Name</th>
-                <th>Phone</th>
+                <th>National ID Number</th>
                 <th>Voted</th>
               </tr>
               <tr>
@@ -130,7 +130,7 @@ export default class Registration extends Component {
               <td>{voter.name}</td>
             </tr>
             <tr>
-              <th>Phone</th>
+              <th>National ID Number</th>
               <td>{voter.phone}</td>
             </tr>
             <tr>
