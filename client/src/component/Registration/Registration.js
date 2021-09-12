@@ -207,7 +207,7 @@ export default class Registration extends Component {
                   <button
                     className="btn-add"
                     disabled={
-                      this.state.voterPhone.length !== 09 ||
+                      this.state.voterPhone.length !== 9 ||
                       this.state.voterPhone.length !== 12 ||
                       this.state.currentVoter.isVerified
                     }
