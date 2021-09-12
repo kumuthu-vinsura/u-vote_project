@@ -205,7 +205,6 @@ export function displayResults(candidates) {
             </div>
             <div
               className="container-item"
-              style={{ border: "1px solid black" }}
             >
               <center>That is all.</center>
             </div>

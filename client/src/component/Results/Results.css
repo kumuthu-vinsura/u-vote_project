@@ -14,7 +14,7 @@ tr:nth-child(even) {
 }
 .container-winner {
   transition: ease all 0.75s;
-  background-color: #f5fffa;
+  background-color: #FAFAFA;
   border-radius: 7px;
   width: 700px;
   padding: 25px;
@@ -26,7 +26,7 @@ tr:nth-child(even) {
 }
 .winner-slogan {
   padding: 7px 7px 7px 1px;
-  color: #ccab00;
+  color: #1B2D4B;
   font-size: 1.5em;
   margin: 7px 0px;
   text-align: justify;
@@ -47,7 +47,7 @@ tr:nth-child(even) {
 }
 .winner-tag {
   text-align: left;
-  color: hotpink;
+  color: #1B2D4B;
 }
 .votes-tag {
   text-align: left;

@@ -126,11 +126,11 @@ export default class AddCandidate extends Component {
           <div className="container-item">
             <form className="form">
               <label className={"label-ac"}>
-                Header
+                Candidate Name
                 <input
                   className={"input-ac"}
                   type="text"
-                  placeholder="eg. Marcus"
+                  placeholder="eg. Sirisena"
                   value={this.state.header}
                   onChange={this.updateHeader}
                 />
@@ -194,7 +194,7 @@ export function loadAdded(candidates) {
           className="container-item"
           style={{
             display: "block",
-            backgroundColor: "#DDFFFF",
+            backgroundColor: "#FEFEFE",
           }}
         >
           {candidates.map(renderAdded)}

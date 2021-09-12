@@ -94,15 +94,16 @@ code {
 .attention,
 .alert,
 .success {
-  border: 1px solid black;
   margin-top: 11px;
   margin-bottom: 11px px;
 }
 .info {
-  background-color: #ddffff;
+  background-color: #1B2D4B;
+  color: #FAFAFA;
 }
 .attention {
-  background-color: #fffbdd;
+  background-color: #1B2D4B;
+  color: #FAFAFA;
 }
 .success {
   background-color: #ddffdd;
