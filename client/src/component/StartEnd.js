@@ -42,7 +42,11 @@ const StartEnd = (props) => {
                 </p>
               </div>
               <div className="container-item">
-                <button type="submit" style={btn}>
+                <button type="submit" style={btn}
+                  disabled={
+                    props.canAdded==true
+                  }
+                >
                   Start Election {props.elEnded ? "Again" : null}
                 </button>
               </div>

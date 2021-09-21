@@ -20,6 +20,8 @@ export default class StartEnd extends Component {
       isAdmin: false,
       elStarted: false,
       elEnded: false,
+      isCanAdded: false,
+      candidateCount: undefined,
     };
   }
 
@@ -52,6 +54,12 @@ export default class StartEnd extends Component {
         account: accounts[0],
       });
 
+      // Total number of candidates
+      const candidateCount = await this.state.ElectionInstance.methods
+        .getTotalCandidate()
+        .call();
+      this.setState({ candidateCount: candidateCount });
+
       // Admin info
       const admin = await this.state.ElectionInstance.methods.getAdmin().call();
       if (this.state.account === admin) {
@@ -63,6 +71,7 @@ export default class StartEnd extends Component {
       this.setState({ elStarted: start });
       const end = await this.state.ElectionInstance.methods.getEnd().call();
       this.setState({ elEnded: end });
+      
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -115,7 +124,10 @@ export default class StartEnd extends Component {
           {!this.state.elStarted ? (
             <>
               <div className="container-item">
-                <button onClick={this.startElection} className="start-btn">
+                <button 
+                  className="start-btn"
+                  onClick={this.startElection} 
+                >
                   Start {this.state.elEnded ? "Again" : null}
                 </button>
               </div>

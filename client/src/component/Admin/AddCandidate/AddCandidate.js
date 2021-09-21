@@ -18,6 +18,7 @@ export default class AddCandidate extends Component {
       web3: null,
       accounts: null,
       isAdmin: false,
+      isElStarted: false, //is Election Started
       header: "",
       slogan: "",
       candidates: [],
@@ -53,6 +54,10 @@ export default class AddCandidate extends Component {
         ElectionInstance: instance,
         account: accounts[0],
       });
+
+      // Get start and end values
+      const start = await this.state.ElectionInstance.methods.getStart().call();
+      this.setState({ isElStarted: start });
 
       // Total number of candidates
       const candidateCount = await this.state.ElectionInstance.methods
@@ -148,7 +153,7 @@ export default class AddCandidate extends Component {
               <button
                 className="btn-add"
                 disabled={
-                  this.state.header.length < 3 || this.state.header.length > 21
+                  (this.state.header.length < 3 || this.state.header.length > 21) || this.state.isElStarted
                 }
                 onClick={this.addCandidate}
               >

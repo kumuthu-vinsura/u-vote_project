@@ -26,6 +26,8 @@ export default class Home extends Component {
       account: null,
       web3: null,
       isAdmin: false,
+      candidateCount: undefined,
+      canAdded: false,
       elStarted: false,
       elEnded: false,
       elDetails: {},
@@ -71,6 +73,12 @@ export default class Home extends Component {
       this.setState({ elStarted: start });
       const end = await this.state.ElectionInstance.methods.getEnd().call();
       this.setState({ elEnded: end });
+
+      // Total number of candidates
+      const candidateCount = await this.state.ElectionInstance.methods
+        .getTotalCandidate()
+        .call();
+      this.setState({ candidateCount: candidateCount });
 
       // Getting election details from the contract
       const adminName = await this.state.ElectionInstance.methods
@@ -304,6 +312,7 @@ export default class Home extends Component {
               elStarted={this.state.elStarted}
               elEnded={this.state.elEnded}
               endElFn={this.endElection}
+              canAdded={this.state.candidateCount==0}
             />
             <ElectionStatus
               elStarted={this.state.elStarted}

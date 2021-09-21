@@ -191,7 +191,7 @@ export default class Registration extends Component {
                       <input
                         className={"input-r"}
                         type="number"
-                        placeholder="eg. 00069022658 / 200010104027 "
+                        placeholder="eg. 69022658 / 200010104027 "
                         value={this.state.voterPhone}
                         onChange={this.updateVoterPhone}
                       />
@@ -199,7 +199,7 @@ export default class Registration extends Component {
                   </div>
                   <p className="note">
                     <span style={{ color: "tomato" }}> Note: </span>
-                    <br /> Make sure your account address and National ID Number (add it without v and add 000 before) are
+                    <br /> Make sure your account address and National ID Number (add it without v) are
                     correct. <br /> Admin might not approve your account if the
                     provided National ID Number does not matches the account
                     address registered in admins catalogue.
@@ -207,8 +207,9 @@ export default class Registration extends Component {
                   <button
                     className="btn-add"
                     disabled={
-                      this.state.voterPhone.length !== 12 || 
+                      (this.state.voterPhone.length != 9 && this.state.voterPhone.length != 12) || 
                       this.state.currentVoter.isVerified
+                      //this.state.currentVoter.isRegistered
                     }
                     onClick={this.registerAsVoter}
                   >
