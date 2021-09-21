@@ -9,9 +9,7 @@ td {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-tr:nth-child(even) {
-  background-color: white;
-}
+
 .container-winner {
   transition: ease all 0.75s;
   background-color: #FAFAFA;
