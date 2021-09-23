@@ -42,15 +42,17 @@ contract Election {
         // Only admin can add
         onlyAdmin
     {
-        Candidate memory newCandidate =
+        if(!start){
+            Candidate memory newCandidate =
             Candidate({
                 candidateId: candidateCount,
                 header: _header,
                 slogan: _slogan,
                 voteCount: 0
             });
-        candidateDetails[candidateCount] = newCandidate;
-        candidateCount += 1;
+            candidateDetails[candidateCount] = newCandidate;
+            candidateCount += 1;
+        }
     }
 
     // Modeling a Election Details
@@ -74,15 +76,17 @@ contract Election {
         // Only admin can add
         onlyAdmin
     {
-        electionDetails = ElectionDetails(
-            _adminName,
-            _adminEmail,
-            _adminTitle,
-            _electionTitle,
-            _organizationTitle
-        );
-        start = true;
-        end = false;
+        if(candidateCount>0){
+            electionDetails = ElectionDetails(
+                _adminName,
+                _adminEmail,
+                _adminTitle,
+                _electionTitle,
+                _organizationTitle
+            );
+            start = true;
+            end = false;
+        }
     }
 
     // Get Elections details
