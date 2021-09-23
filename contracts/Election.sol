@@ -42,6 +42,7 @@ contract Election {
         // Only admin can add
         onlyAdmin
     {
+        require(!start, "Election is Started !");
         if(!start){
             Candidate memory newCandidate =
             Candidate({
@@ -76,6 +77,7 @@ contract Election {
         // Only admin can add
         onlyAdmin
     {
+        require(candidateCount>0, "Please add at least one Candidate");
         if(candidateCount>0){
             electionDetails = ElectionDetails(
                 _adminName,
