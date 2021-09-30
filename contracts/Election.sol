@@ -43,6 +43,7 @@ contract Election {
         onlyAdmin
     {
         require(!start, "Election is Started !");
+        //verification dro start election
         if(!start){
             Candidate memory newCandidate =
             Candidate({
