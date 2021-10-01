@@ -1,9 +1,7 @@
 
-# Decentralized Voting (dVoting)
+# Decentralized Voting (UxVote)
 
 A decentralized voting system based on Ethereum blockchain technology (designed for corporate use).
-
-## [demo video](https://youtu.be/nh1zfTTrdII "Watch demo video.")
 
 ## System Workflow
 
