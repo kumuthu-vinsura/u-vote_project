@@ -85,4 +85,4 @@ Admin will create a voting instance by launching/deploying the system in a block
 
 ---
 
-\# That is all.
+\# Thank you for contribution.
