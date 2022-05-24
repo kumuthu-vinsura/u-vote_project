@@ -87,3 +87,5 @@ Admin will create a voting instance by launching/deploying the system in a block
 
 \# Thank you for contribution.<br>
 \# Stay Safe
+
+## License
